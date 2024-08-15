@@ -1,0 +1,70 @@
+#Creation of sg ids 
+- DB security 
+- backend securiy 
+- frontend 
+- Bastion server 
+- ansible servr 
+
+# DB accepting traffic from backend 
+  - name DB accepting trafic from backend 
+    from port :3306
+    to port  :3306
+    source secuirty :backend server 
+    destintion :db sg id 
+# DB accepting traffic from bastion 
+  - name DB accepting trafic from bastion 
+    from port :3306
+    to port  :3306
+    source secuirty :bastion server 
+    destintion :db sg id 
+# backend accepting traffic from bastion 
+  - name DB accepting trafic from bastion 
+    from port :3306
+    to port  :3306
+    source secuirty :bastion server 
+    destintion :db sg id 
+# backend accepting traffic from ansible 
+  - name DB accepting trafic from bastion 
+    from port :3306
+    to port  :3306
+    source secuirty :bastion server 
+    destintion :db sg id 
+# backend accepting traffic from private network  
+  - name DB accepting trafic from bastion 
+    from port :3306
+    to port  :3306
+    source secuirty :bastion server 
+    destintion :db sg id 
+# frontend accepting traffic from bastion  
+  - name DB accepting trafic from bastion 
+    from port :3306
+    to port  :3306
+    source secuirty :bastion server 
+    destintion :db sg id 
+# frontend accepting traffic from ansible  
+  - name DB accepting trafic from bastion 
+    from port :3306
+    to port  :3306
+    source secuirty :bastion server 
+    destintion :db sg id
+
+# frontend accepting traffic from internet gateway/public  
+  - name DB accepting trafic from bastion 
+    from port :3306
+    to port  :3306
+    source secuirty :bastion server 
+    destintion :db sg id
+
+# bastion accepting traffic from internet gateway/public  
+  - name DB accepting trafic from bastion 
+    from port :3306
+    to port  :3306
+    source secuirty :bastion server 
+    destintion :db sg id
+
+# ansible accepting traffic from internet gateway/public  
+  - name DB accepting trafic from bastion 
+    from port :3306
+    to port  :3306
+    source secuirty :bastion server 
+    destintion :db sg id
